@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="hobbies.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>WEB DEVELOPMENT LAB 3</h1>
+        </div>
+        <ul>
+            <li><a href="homepage.html">Biodata</a></li>
+            <li><a class="active_nav" href="hobbies.html">Hobbies</a></li>
+            <li><a href="campusLife.html">Campus life</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>My Hobbies</h1>
+    </header>
+
+    <div class="container">
+        <h2>Hobby 1: Playing computer games</h2>
+        <p>I'm a gamer, and my hobby revolves around playing computer games. I'm particularly drawn to competitive online titles like 
+            Valorant, League of Legends, and Dota 2, where teamwork, strategy, and individual skills come together in intense battles. 
+            These games provide me with a thrilling challenge that I thoroughly enjoy. Additionally, I also love diving into the 
+            captivating world of Genshin Impact, an open-world action RPG that allows me to explore breathtaking landscapes and engage 
+            in epic battles..
+        </p>
+        <p>&nbsp; &nbsp; Gaming is not just entertainment for me; it's a way to connect with friends and like-minded players around the 
+            world. We strategize, communicate, and share memorable moments, forming a sense of camaraderie that goes beyond the screen. 
+            In summary, my gaming hobby is a diverse and immersive experience, offering a mix of competitive challenges and captivating 
+            adventures while allowing me to build connections with fellow gamers."
+        </p>
+        <p>Below are the games that i often played:</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <a href="https://playvalorant.com/en-us/" target="_blank"><img src="https://livepkassets.pechakucha.com/slides/02b80b81-d1f4-4565-93b4-8039a81d4b9f/padblack_noborder_1600x900/slide_1_1616741389040.png" style="width:100%"></a>
+              <div class="text">Valorant</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <a href="https://www.leagueoflegends.com/en-us/" target="_blank"><img src="https://wallpaperset.com/w/full/7/9/7/534842.jpg" style="width:100%"></a>
+              <div class="text">League of Legends</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <a href="https://www.dota2.com/home" target="_blank"><img src="https://wallpapercave.com/wp/wp2532627.jpg" style="width:100%"></a>
+              <div class="text">Dota 2</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <a href="https://genshin.hoyoverse.com/en/" target="_blank"><img src="https://blog.playstation.com/tachyon/2023/09/9fa2819465930cedc4644349d8f2f9a56c07c38f-scaled.jpeg" style="width:100%"></a>
+                <div class="text">Genshin Impact</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <h2>Hobby 2: Watching Anime</h2>
+        <p>My second hobby is watching anime. Anime is a style of animation originating in Japan that is characterized by colorful 
+            graphics, vibrant characters, and fantastical storylines. Anime covers a wide range of genres, including action, adventure, 
+            comedy, drama, fantasy, horror, romance, and science fiction.
+        </p>
+        <p>&nbsp; &nbsp;I enjoy watching anime for a variety of reasons. First, I appreciate the creativity and artistry of anime. Anime creators 
+            are constantly pushing the boundaries of animation, and their work is often visually stunning. Second, I enjoy the complex 
+            and well-developed characters in anime. Anime characters are often relatable and believable, even when they are living in 
+            fantastical worlds. Third, I appreciate the emotional depth of anime. Anime can be funny, sad, exciting, and 
+            thought-provoking, all at the same time.
+        </p>
+        <p>Below are the list of anime that i highly recommanded:</p>
+        <ol class="anime">
+            <a href="https://anime-86.com/" target="_blank"><li>86-Eighty-Six</li></a>
+            <a href="https://www.kimiuso.jp/" target="_blank"><li>Your lie in April</li></a>
+            <a href="https://shingeki.tv/final/" target="_blank"><li>Attack on Titan</li></a>
+            <a href="https://bisquedoll-anime.com/" target="_blank"><li>My Dress-Up Darling</li></a>
+            <a href="http://www.hagaren.jp/fa/" target="_blank"><li>Fullmetal Alchemist: Brotherhood</li></a>
+            <a href="http://re-zero-anime.jp/" target="_blank"><li>Re:ZERO -Starting Life in Another World</li></a>
+            <a href="https://ichigoproduction.com/" target="_blank"><li>Oshi no Ko</li></a>
+            <a href="http://kaiyari.com/" target="_blank"><li>Redo of Healer</li></a>
+            <a href="https://summertime-anime.com/" target="_blank"><li>Summer Time Rendering</li></a>
+            <a href="http://grandblue-anime.com/" target="_blank"><li>Grand Blue</li></a>
+        </ol>
+    </div>
+    
+</body>
+</html>

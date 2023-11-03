@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My UTHM Campus Life</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            width: 100%;
+            height: 95px;
+            line-height: 75px;
+            padding: 0px 100px;
+            box-sizing: border-box;
+            background-image: linear-gradient(#033747, #012733);
+        }
+        nav .logo{
+            float: left;
+            color: white;
+            cursor: pointer;
+        }
+        nav ul{
+            float: right;
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+        }
+        nav li a{
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 0px 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav li a:hover{
+            color: #ff8c69;
+            transition:all 0.4s ease 0%;
+        }
+
+        nav li a.active{
+            color: #ff8c69;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 5s;
+            -webkit-animation: fadeIn 5s;
+            -moz-animation: fadeIn 5s;
+            -o-animation: fadeIn 5s;
+            -ms-animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @-moz-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @-webkit-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @-o-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @-ms-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .uthm{
+            display: flex;
+            padding: 3%;
+            overflow: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            border-radius: 10px;}
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            border: 1px solid #cacaca;
+            background-color: #f1f1f1;
+            box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);}
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 1) 0%,
+                rgba(255, 154, 0, 1) 10%,
+                rgba(208, 222, 33, 1) 20%,
+                rgba(79, 220, 74, 1) 30%,
+                rgba(63, 218, 216, 1) 40%,
+                rgba(47, 201, 226, 1) 50%,
+                rgba(28, 127, 238, 1) 60%,
+                rgba(95, 21, 242, 1) 70%,
+                rgba(186, 12, 248, 1) 80%,
+                rgba(251, 7, 217, 1) 90%,
+                rgba(255, 0, 0, 1) 100%);
+                border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>WEB DEVELOPMENT LAB 3</h1>
+        </div>
+        <ul>
+            <li><a href="homepage.html">Biodata</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a class="active" href="campusLife.html">Campus life</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>My UTHM Campus Life</h1>
+    </header>
+
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a student at the Universiti Tun Hussein Onn Malaysia (UTHM), and I want to share my wonderful campus life experiences with you. UTHM is a place where I've had the opportunity to grow academically, socially, and personally.
+        </p>
+
+        <h2>Campus Facilities</h2>
+        <p>
+            UTHM boasts state-of-the-art facilities, including modern classrooms, libraries, labs, and recreational areas. The well-equipped campus provides an ideal environment for learning and self-improvement.
+        </p>
+
+        <h2>Student Organizations</h2>
+        <p>
+            UTHM offers a wide range of student organizations and clubs where I've met new friends and honed my skills. Whether it's a sports club, a cultural group, or an academic society, there's something for everyone.
+        </p>
+
+        <h2>Campus Events</h2>
+        <p>
+            The campus is always buzzing with exciting events and activities. From academic conferences to cultural festivals and sports competitions, UTHM keeps us engaged and entertained throughout the year.
+        </p>
+        
+        <h2>UTHM Campus View</h2>
+        <div class="uthm">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPBpgly_oUSN7jYW5OxXIQe98mr-kmLs5O-Hqg=s1360-w1360-h1020" alt="Library UTHM" width="50%">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNR20BzZD3muffSEQil7MnRKIIj7yALQIXLU7Ya=s1360-w1360-h1020" alt="FSKTM, Faculty of Computer Science and Information Technology - UTHM">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNp5xmUKuVGPbA0aUNSs-R3yPYsWsxT-Us_umzc=s1360-w1360-h1020" alt="Sultan Ibrahim Mosque UTHM">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP3zKam8hsdgp_BCANlzXbj2egc_20z7KZH42CB=s1360-w1360-h1020" alt="Dewan Sultan Ibrahim UTHM">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP2ts0afDsM4dYkE9MLKjuJdzaRjEcAUvnJH-Fd=s1360-w1360-h1020" alt="Bangunan F2 UTHM">
+        </div>
+
+        <h2>Address of UTHM</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.726732212547!2d103.0845688205266!3d1.8553170208468497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d05eaa459d0ab9%3A0x495f817bef16f0a1!2sUniversiti%20Tun%20Hussein%20Onn%20Malaysia%20(UTHM)!5e0!3m2!1sen!2smy!4v1698955402689!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>
