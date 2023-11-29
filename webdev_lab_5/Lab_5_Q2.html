@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 Question 2</title>
+</head>
+<body>
+    <div>
+        <p>Press F12 to see the console log</p>
+        <pre id="test"></pre>
+    </div>
+
+    
+    <script>
+        fetch("bookdata.json")
+            .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            const bookdata = data;
+            console.log(bookdata);
+            document.getElementById('test').innerHTML = `
+  The title of the first book:   "${bookdata.books[0].title}" <br>
+The author of the second book:   "${bookdata.books[1].author}" <br>
+      The genres of all books:   "${bookdata.books[0].author}${bookdata.books[1].author}"
+            `
+        })
+    </script>
+</body>
+</html>
